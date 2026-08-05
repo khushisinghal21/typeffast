@@ -45,6 +45,7 @@
   "packageManager": "yarn@1.22.22",
   "workspaces": [
     "apps/*",
+    "apps/web/*",
     "packages/*"
   ],
   "dependencies": {
