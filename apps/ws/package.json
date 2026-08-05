@@ -1,0 +1,14 @@
+{
+  "name": "ws",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeFast websocket server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo \"No build step for ws server\""
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}

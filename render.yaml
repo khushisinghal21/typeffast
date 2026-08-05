@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: typefast-ws
+    runtime: node
+    plan: free
+    rootDir: apps/ws
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: WS_PORT
+        value: 10000
+      - key: WS_HOST
+        value: 0.0.0.0
+    healthCheckPath: /
