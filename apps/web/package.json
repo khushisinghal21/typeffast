@@ -44,7 +44,10 @@
     "uuid": "^11.0.3",
     "ws": "^8.18.3",
     "zod": "^3.24.0",
-    "zustand": "^5.0.2"
+    "zustand": "^5.0.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5"
   },
   "devDependencies": {
     "@turbo/gen": "^2.5.6",
