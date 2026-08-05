@@ -33,7 +33,7 @@ A modern, minimalist typing speed test application built with Next.js.
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/just-surviving/TypeFast.git
+   git clone (https://github.com/khushisinghal21/typeffast.git)
    cd TypeFast-
    ```
 
