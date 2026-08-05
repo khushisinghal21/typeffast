@@ -1,7 +1,7 @@
 const http = require("http");
 const { WebSocketServer } = require("ws");
 
-const PORT = process.env.WS_PORT || 8080;
+const PORT = process.env.PORT || process.env.WS_PORT || 8080;
 const HOST = process.env.WS_HOST || "0.0.0.0";
 
 // rooms: { [roomCode]: { members: Map<userId, { ws, name, image, isHost, progress }> } }
