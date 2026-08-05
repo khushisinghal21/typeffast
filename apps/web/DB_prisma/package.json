@@ -23,11 +23,11 @@
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "@types/bcryptjs": "^2.4.6",
-    "prisma": "^6.0.1",
     "typescript": "^5.0.0"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.7.4",
-    "@prisma/client": "^6.0.1"
+    "prisma": "^6.14.0",
+    "@prisma/client": "^6.14.0"
   }
 }
