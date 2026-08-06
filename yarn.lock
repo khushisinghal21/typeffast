@@ -577,7 +577,7 @@
   resolved "https://registry.npmjs.org/@panva/hkdf/-/hkdf-1.2.1.tgz"
   integrity sha512-6oclG6Y3PiDFcoyk8srjLfVKyMfVCKJ27JwNPViuXziFpmdz+MZnZN/aKY0JGXgYuO/VghU0jcOAZgWXZ1Dmrw==
 
-"@prisma/client@^6.0.1", "@prisma/client@^6.14.0", "@prisma/client@>=2.26.0 || >=3 || >=4 || >=5 || >=6":
+"@prisma/client@^6.14.0", "@prisma/client@>=2.26.0 || >=3 || >=4 || >=5 || >=6":
   version "6.14.0"
   resolved "https://registry.npmjs.org/@prisma/client/-/client-6.14.0.tgz"
   integrity sha512-8E/Nk3eL5g7RQIg/LUj1ICyDmhD053STjxrPxUtCRybs2s/2sOEcx9NpITuAOPn07HEpWBfhAVe1T/HYWXUPOw==
@@ -974,7 +974,7 @@
     aria-hidden "^1.2.4"
     react-remove-scroll "^2.6.3"
 
-"@radix-ui/react-slot@^1.1.0", "@radix-ui/react-slot@1.2.3":
+"@radix-ui/react-slot@^1.1.0", "@radix-ui/react-slot@^1.1.1", "@radix-ui/react-slot@1.2.3":
   version "1.2.3"
   resolved "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz"
   integrity sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==
@@ -1177,7 +1177,8 @@
   resolved "file:apps/web/DB_prisma"
   dependencies:
     "@auth/prisma-adapter" "^2.7.4"
-    "@prisma/client" "^6.0.1"
+    "@prisma/client" "^6.14.0"
+    prisma "^6.14.0"
 
 "@repo/eslint-config@*", "@repo/eslint-config@file:/Users/khushisinghal/ttypeFast/TypeFast/apps/web/eslint-config":
   version "0.0.0"
@@ -1271,6 +1272,7 @@
     lucide-react "^0.468.0"
     next "^15.1.2"
     next-auth "^5.0.0-beta.25"
+    next-themes "^0.4.6"
     package.json "^2.0.1"
     random-words "^2.0.1"
     react "^19.0.0"
@@ -4773,7 +4775,7 @@ prettier@^3.2.5, prettier@^3.5.3:
   resolved "https://registry.npmjs.org/prettier/-/prettier-3.6.2.tgz"
   integrity sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==
 
-prisma@*, prisma@^6.0.1, prisma@^6.14.0:
+prisma@*, prisma@^6.14.0:
   version "6.14.0"
   resolved "https://registry.npmjs.org/prisma/-/prisma-6.14.0.tgz"
   integrity sha512-QEuCwxu+Uq9BffFw7in8In+WfbSUN0ewnaSUKloLkbJd42w6EyFckux4M0f7VwwHlM3A8ssaz4OyniCXlsn0WA==
