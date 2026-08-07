@@ -1,7 +1,10 @@
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth from "next-auth";
+import Credentials from "next-auth/providers/credentials";
+import bcrypt from "bcryptjs";
 import authConfig from "./auth.config";
-import { getUserById } from "./db/user";
+import { getUserByEmail, getUserById } from "./db/user";
+import { signInSchema } from "./common/src/schemas";
 import prisma from "./DB_prisma/src/index";
 
 export const { auth, handlers, signIn, signOut } = NextAuth({
@@ -33,4 +36,30 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
   adapter: PrismaAdapter(prisma),
   session: { strategy: "jwt" },
   ...authConfig,
+  providers: [
+    ...authConfig.providers,
+    Credentials({
+      credentials: {
+        email: { label: "Email", type: "email" },
+        password: { label: "Password", type: "password" },
+      },
+      async authorize(credentials) {
+        const validation = signInSchema.safeParse(credentials);
+
+        if (validation.success) {
+          const { email, password } = validation.data;
+
+          const user = await getUserByEmail(email);
+          if (!user || !user.password) return null;
+
+          const passwordMatch = await bcrypt.compare(password, user.password);
+          if (passwordMatch) {
+            return user;
+          }
+        }
+
+        return null;
+      },
+    }),
+  ],
 });
