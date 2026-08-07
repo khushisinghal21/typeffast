@@ -15,10 +15,6 @@
     "incremental": true,
     "declaration": false,
     "declarationMap": false,
-    "typeRoots": [
-      "./node_modules/@types",
-      "../../node_modules/@types"
-    ],
     "paths": {
       "@/*": ["./*"]
     },
@@ -33,7 +29,8 @@
     "**/*.tsx",
     "next-env.d.ts",
     "next.config.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "types/**/*.d.ts"
   ],
   "exclude": ["node_modules"]
 }
